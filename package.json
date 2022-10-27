@@ -1,0 +1,23 @@
+{
+  "name": "components-react-fbol",
+  "version": "1.0.0",
+  "description": "Une Librairie de composantes React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrankBol/fxgcomponents_frboll002.git"
+  },
+  "keywords": [
+    "React",
+    "Components"
+  ],
+  "author": "Francis Bolduc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FrankBol/fxgcomponents_frboll002/issues"
+  },
+  "homepage": "https://github.com/FrankBol/fxgcomponents_frboll002#readme"
+}
