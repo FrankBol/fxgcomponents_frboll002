@@ -2,7 +2,7 @@
   "name": "components-react-fbol",
   "version": "1.0.0",
   "description": "Une Librairie de composantes React",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
