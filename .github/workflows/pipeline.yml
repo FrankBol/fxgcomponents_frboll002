@@ -30,5 +30,18 @@ jobs:
         with:
           token: ${{ secrets.NPM_TOKEN }}
 
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
 
-
+    - name: 📂 Sync files
+      uses: lib/FTP-Deploy-Action@4.2.0
+      with:
+        server: frbol002.devwebgarneau.com/
+        username: frbol002
+        password: ${{ secrets.PASSWORD_FTP }}
+        protocol: ftps
+        port: 21
