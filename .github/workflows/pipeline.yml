@@ -37,10 +37,15 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
 
+		- name: Build project
+		  run: |
+			  yarn install
+				yarn build-storybook
+
     - name: 📂 Sync files
-      uses: fxgcomponents_frboll002/FTP-Deploy-Action@4.2.0
+      uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
-        server: frbol002.devwebgarneau.com/
+        server: ftp.frbol002.devwebgarneau.com/
         username: frbol002
         password: ${{ secrets.PASSWORD_FTP }}
         protocol: ftps
