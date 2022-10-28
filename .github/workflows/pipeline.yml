@@ -31,5 +31,5 @@ jobs:
           token: ${{ secrets.NPM_TOKEN }}
 					exclude: |
             **/.storybook/**
-            **/node_modules/**
+
 
