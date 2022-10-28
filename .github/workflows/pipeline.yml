@@ -38,7 +38,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: 📂 Sync files
-      uses: lib/FTP-Deploy-Action@4.2.0
+      uses: fxgcomponents_frboll002/FTP-Deploy-Action@4.2.0
       with:
         server: frbol002.devwebgarneau.com/
         username: frbol002
