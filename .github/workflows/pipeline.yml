@@ -1,21 +1,19 @@
 name: Livraison NPM et Storybook
-
-on:
+'on':
   push:
     branches:
       - master
-
 jobs:
   version:
     runs-on: ubuntu-latest
-    if: "!startsWith(github.event.head_commit.message, '[RELEASE]')"
+    if: '!startsWith(github.event.head_commit.message, ''[RELEASE]'')'
     steps:
       - uses: actions/checkout@v2
         with:
-          token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
-      - run: git config --global user.name '${{ secrets.GH_PUBLIC_NAME }}'
-      - run: git config --global user.email '${{ secrets.GH_EMAIL }}'
-      - run: npm version patch -m "[RELEASE] %s"
+          token: '${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}'
+      - run: 'git config --global user.name ''${{ secrets.GH_PUBLIC_NAME }}'''
+      - run: 'git config --global user.email ''${{ secrets.GH_EMAIL }}'''
+      - run: 'npm version patch -m "[RELEASE] %s"'
       - run: git push
       - run: git push --tags
   publish:
@@ -28,25 +26,22 @@ jobs:
       - run: npm install
       - uses: JS-DevTools/npm-publish@v1
         with:
-          token: ${{ secrets.NPM_TOKEN }}
-
+          token: '${{ secrets.NPM_TOKEN }}'
   web-deploy:
-    name: 🎉 Deploy
+    name: "\U0001F389 Deploy"
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code
-    - uses: actions/checkout@v2
-
-    - name: Build project
-      run: |
-        yarn install
-        yarn build-storybook
-			 
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.2
-      with:
-        server: ftp.frbol002.devwebgarneau.com
-        username: frbol002
-        password: ${{ secrets.FTP_PASSWORD }}
-        protocol: ftps
-        port: 21
+      - name: "\U0001F69A Get latest code"
+      - uses: actions/checkout@v2
+      - name: Build project
+        run: |
+          yarn install
+          yarn build-storybook
+      - name: "\U0001F4C2 Sync files"
+        uses: SamKirkland/FTP-Deploy-Action@4.3.2
+        with:
+          server: ftp.frbol002.devwebgarneau.com
+          username: frbol002
+          password: '${{ secrets.FTP_PASSWORD }}'
+          protocol: ftps
+          port: 21
