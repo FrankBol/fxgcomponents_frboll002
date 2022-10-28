@@ -30,6 +30,6 @@ jobs:
         with:
           token: ${{ secrets.NPM_TOKEN }}
 					exclude: |
-            **/.storybook/**
+            /.storybook/
 
 
