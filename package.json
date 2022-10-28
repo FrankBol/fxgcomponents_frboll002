@@ -1,9 +1,11 @@
 {
   "name": "fxgcomponents_frbol002",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Une Librairie de composantes React",
   "main": "./lib/index.js",
-    "file":["/lib"],
+  "file": [
+    "/lib"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
