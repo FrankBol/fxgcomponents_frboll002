@@ -1,6 +1,6 @@
 {
   "name": "components-react-fbol",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Une Librairie de composantes React",
   "main": "index.js",
   "scripts": {
