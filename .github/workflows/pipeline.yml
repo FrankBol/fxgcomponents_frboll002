@@ -30,22 +30,23 @@ jobs:
         with:
           token: ${{ secrets.NPM_TOKEN }}
 
-  web-deploy:
-    name: 🎉 Deploy
-    runs-on: ubuntu-latest
-    steps:
-    - name: 🚚 Get latest code
-    - uses: actions/checkout@v2
+  # web-deploy:
+  #   name: 🎉 Deploy
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - name: 🚚 Get latest code
+  #   - uses: actions/checkout@v2
 
-    - name: Build project
-    - run:  yarn install
-    - run:  yarn build-storybook
+  #   - name: Build project
+  #   - run:  npm i yarn --global
+  #   - run:  yarn install
+  #   - run:  yarn build-storybook
       			 
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.2
-      with:
-        server: ftp.frbol002.devwebgarneau.com
-        username: frbol002
-        password: ${{ secrets.FTP_PASSWORD }}
-        protocol: ftps
-        port: 21
+  #   - name: 📂 Sync files
+  #     uses: SamKirkland/FTP-Deploy-Action@4.3.2
+  #     with:
+  #       server: ftp.frbol002.devwebgarneau.com
+  #       username: frbol002
+  #       password: ${{ secrets.FTP_PASSWORD }}
+  #       protocol: ftps
+  #       port: 21
