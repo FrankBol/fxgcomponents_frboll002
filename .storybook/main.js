@@ -7,5 +7,5 @@ module.exports = {
     "@storybook/addon-essentials"
   ],
   framework: "@storybook/react",
-  staticDirs: [{ from: '../src/assets', to: '/assets' }]
+
 };
