@@ -39,7 +39,6 @@ jobs:
 
     - name: Build project
     - run: |
-      npm i yarn --g
       yarn install
       yarn build-storybook
 						 
