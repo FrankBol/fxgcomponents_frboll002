@@ -33,13 +33,21 @@ jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
-    steps:     			 
+    steps:
+    - name: 🚚 Get latest code
+    - uses: actions/checkout@v2
+
+    - name: Build project
+    - run: npm i yarn --global
+    - run: yarn install
+    - run: yarn build-storybook
+      			 
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
         server: ${{ secrets.SERVEUR_FTP }}
-        username: ${{ secrets.USERNAME_FTP }}
-        password: ${{ secrets.FTP_PASSWORD }}
+        username: frbol002
+        password: )v5i-lgK?m8L
         local-dir: ./storybook-static/
         server-dir: public_html/strorybook/
         protocol: ftps
