@@ -36,6 +36,10 @@ jobs:
     steps:
     - name: 🚚 Get latest code
     - uses: actions/checkout@v2
+
+    - name: Build project
+    - run: yarn install
+    - run: yarn build-storybook
       			 
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
