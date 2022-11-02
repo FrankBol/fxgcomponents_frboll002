@@ -1,4 +1,3 @@
-export * from './components/Collection';
 export * from './src/components/Button';
 export * from './src/components/Avatar';
 export * from './src/components/Dropdown';

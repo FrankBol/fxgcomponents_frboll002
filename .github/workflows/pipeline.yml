@@ -45,9 +45,9 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
-        server: ftp.frbol002.devwebgarneau.com 
-        username: frbol002
-        password: )v5i-lgK?m8L
+        server: ${{ secrets.SERVEUR_FTP }}
+        username: ${{ secrets.USER_NAME_FTP }}
+        password: ${{ secrets.PASSEWORD_FTP }}
         local-dir: ./storybook-static/
         server-dir: public_html/strorybook/
         protocol: ftps
