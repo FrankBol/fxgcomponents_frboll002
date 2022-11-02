@@ -1,7 +1,7 @@
 module.exports = {
   stories: [
     // "../lib/src/**/*.stories.mdx",
-    "../lib/src/**/*.stories.@(js|jsx|ts|tsx)"
+    "../src/**/*.stories.@(js|jsx|ts|tsx)"
     // "../**/*.stories.@(js|jsx|ts|tsx)"
   ],
   addons: [
@@ -9,5 +9,5 @@ module.exports = {
     "@storybook/addon-essentials"
   ],
   framework: "@storybook/react",
-  staticDirs: [{ from: '../lib/src/assets', to: '/assets' }]
+  staticDirs: [{ from: '../src/assets', to: '/assets' }]
 };
