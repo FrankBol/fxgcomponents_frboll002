@@ -45,8 +45,8 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
-        server: ftp.frbol002.devwebgarneau.com
-        username: frbol002
+        server: ${{ secrets.SERVEUR_FTP }}
+        username: ${{ secrets.USERNAME_FTP }}
         password: ${{ secrets.FTP_PASSWORD }}
         protocol: ftps
         port: 21
