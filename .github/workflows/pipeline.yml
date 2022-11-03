@@ -44,7 +44,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
           server: ${{ secrets.SERVEUR_FTP }}
-          username: ${{ secrets.USER_NAME_FTP }}
+          username: ${{ secrets.USERNAME_FTP }}
           password: ${{ secrets.PASSEWORD_FTP }}
           local-dir: ./storybook-static/
           server-dir: public_html/strorybook/
