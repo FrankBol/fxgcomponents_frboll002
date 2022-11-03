@@ -1,6 +1,6 @@
 import './style.css'
 
-import { Alert } from '../src/components/Alert/Alert';
+import { Alert } from '../../src/components/Alert/Alert';
 
 export default {
   title: 'Components-TP1/Alert',

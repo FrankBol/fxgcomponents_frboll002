@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import { Card } from '../src/components/Card/Card';
+import { Card } from '../../src/components/Card/Card';
 
 export default {
   title: 'Components-TP1/Card',
