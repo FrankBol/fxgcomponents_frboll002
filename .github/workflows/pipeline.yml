@@ -36,9 +36,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: 🚚 Get latest code
-        run: npm ci
-        run: npm run build-storybook
+      - name: 🚚 Install dependencies
+      - run: npm ci
+      - name: 🚚 Build Storybook
+      - run: npm run build-storybook
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
