@@ -35,7 +35,8 @@ jobs:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: 🚚 Get latest cod
+        uses: actions/checkout@v2
       - name: run ci
         run: npm i
       - name: build
