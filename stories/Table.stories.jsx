@@ -1,7 +1,7 @@
 import './style.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import { Table } from '../../src/components/Table/Table';
+import { Table } from '../src/components/Table/Table';
 
 export default {
   title: 'Components-TP1/Table',

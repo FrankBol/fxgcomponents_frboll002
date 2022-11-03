@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css'
 
-import { Tag } from '../../src/components/Tag/Tag';
+import { Tag } from '../src/components/Tag/Tag';
 
 export default {
   title: 'Components-TP1/Tag',
