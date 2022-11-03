@@ -1,6 +1,6 @@
 import './style.css'
 
-import { Dropdown } from '../components/Dropdown/Dropdown';
+import { Dropdown } from '../src/components/Dropdown/Dropdown';
 
 export default {
   title: 'Components-TP1/Dropdown',
