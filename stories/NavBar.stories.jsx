@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
-import { NavBar } from '../components/NavBar/NavBar';
+import { NavBar } from '../src/components/NavBar/NavBar';
 
 export default {
   title: 'Components-TP1/NavBar',
