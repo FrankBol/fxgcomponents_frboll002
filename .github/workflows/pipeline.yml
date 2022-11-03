@@ -34,20 +34,20 @@ jobs:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code
-    - uses: actions/checkout@v2
+      - name: 🚚 Get latest code
+      - uses: actions/checkout@v2
 
-    - name: Build project
-    - run: npm ci
-    - run: npm run build-storybook
+      - name: Build project
+        run: npm ci
+        run: npm run build-storybook
       			 
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.2
-      with:
-        server: ${{ secrets.SERVEUR_FTP }}
-        username: ${{ secrets.USER_NAME_FTP }}
-        password: ${{ secrets.PASSEWORD_FTP }}
-        local-dir: ./storybook-static/
-        server-dir: public_html/strorybook/
-        protocol: ftps
-        port: 21
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.2
+        with:
+          server: ${{ secrets.SERVEUR_FTP }}
+          username: ${{ secrets.USER_NAME_FTP }}
+          password: ${{ secrets.PASSEWORD_FTP }}
+          local-dir: ./storybook-static/
+          server-dir: public_html/strorybook/
+          protocol: ftps
+          port: 21
