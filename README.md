@@ -5,7 +5,7 @@
 ## 🤓 Description
 Vous trouverez dans ce dossier une StoryBook de 10 Components React modifiable incluant 3 exemples de modification pour chaqun!
 
-<img src="./lib/src/assets/img/strorybook.jpg" height="300"/>
+<img src="./assets/img/strorybook.jpg" height="300"/>
 
 &nbsp;&nbsp;
 
