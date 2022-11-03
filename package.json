@@ -1,6 +1,6 @@
 {
   "name": "fxgcomponents_frboll002",
-  "version": "1.0.38",
+  "version": "1.0.39",
   "description": "Une Librairie de composantes React",
   "main": "./src/index.js",
   "files": [
