@@ -45,7 +45,7 @@ jobs:
         with:
           server: ${{ secrets.SERVEUR_FTP }}
           username: ${{ secrets.USERNAME_FTP }}
-          password: ${{ secrets.PASSEWORD_FTP }}
+          password: ${{ secrets.PASSWORD_FTP }}
           local-dir: ./storybook-static/
           server-dir: public_html/strorybook/
           protocol: ftps
