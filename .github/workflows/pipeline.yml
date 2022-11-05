@@ -28,6 +28,8 @@ jobs:
         with:
           node-version: 12
       - run: npm install
+      - run: npm ci
+      - run: npm run build-lib
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
