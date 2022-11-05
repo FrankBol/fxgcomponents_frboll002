@@ -1,10 +1,10 @@
 {
   "name": "fxgcomponents_frboll002",
-  "version": "1.0.41",
+  "version": "1.0.42",
   "description": "Une Librairie de composantes React",
-  "main": "./src/index.js",
+  "main": "./lib/index.js",
   "files": [
-    "/src"
+    "/lib"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
