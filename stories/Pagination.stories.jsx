@@ -1,6 +1,6 @@
 import './style.css'
 
-import { Pagination } from '../src/components/Pagination/Pagination';
+import { Pagination } from '../lib/components/Pagination/Pagination';
 
 export default {
   title: 'Components-TP1/Pagination',

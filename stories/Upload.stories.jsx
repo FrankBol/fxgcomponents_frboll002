@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css'
 
-import { Upload } from '../src/components/Upload/Upload';
+import { Upload } from '../lib/components/Upload/Upload';
 
 export default {
   title: 'Components-TP1/Upload',
