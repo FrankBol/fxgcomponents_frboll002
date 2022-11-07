@@ -16,9 +16,9 @@ jobs:
       - run: git config --global user.name '${{ secrets.GH_PUBLIC_NAME }}'
       - run: git config --global user.email '${{ secrets.GH_EMAIL }}'
       - run: npm version patch -m "[RELEASE] %s"
+      - run: git push
       - run: git tag
       - run: git push --tags
-      - run: git push
 
   publish:
     runs-on: ubuntu-latest
