@@ -111,5 +111,3 @@ yarn storybook
 ## 🕺Contributeurs 
 - [Francis Bolduc](https://github.com/FrankBol)
 - [Gabriel Lafrance](https://github.com/woobay)
-
-
