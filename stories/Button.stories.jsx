@@ -32,7 +32,7 @@ Link.args = {
 };
 
 export const Patate = Template.bind({});
-Primary.args = {
+Patate.args = {
   text: "Patate",
   type: 'primary',
   size: "large" 
