@@ -30,3 +30,10 @@ Link.args = {
   type: "link",
   size: "large"
 };
+
+export const Patate = Template.bind({});
+Primary.args = {
+  text: "Patate",
+  type: 'primary',
+  size: "large" 
+};
